@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    display: grid;
+}
+p {
+    color: deeppink;
+    font-family: cursive;
+    font-size: medium;
+    font-weight: 200;
+}
+h1 {
+    color: chartreuse;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: 900;
+
+
+}
+img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
