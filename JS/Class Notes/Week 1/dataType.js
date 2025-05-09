@@ -1,6 +1,9 @@
 ////////////////////////Data Types//////////////////////////
-
-
+// strings: text or words "Hello World"
+// number: a numeric value(integer or decimal) ex... 20  2.5
+//boolean: logical true or false
+//undefined: no value assigned yet ex... var myName;
+//null: empty value  ex.. var car = null;
 
 
 
