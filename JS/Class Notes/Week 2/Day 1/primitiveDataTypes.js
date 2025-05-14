@@ -12,9 +12,50 @@
 ///////////// Arrays
 ///////////// Functions
 
-//Non-primitive data types  
+//Non-primitive data types 
 //Primitive Data Types are immutable (non-modifyable) You can't change them
+let word = "JavaScript";
+word[0] = "y";
+console.log(word);
 
+let numOne = 3;
+let numTwo = 3;
+console.log(numOne == numTwo)
+
+let js = "javaScript";
+let py = "python";
+console.log(js == py)
+
+let lightsOn = true;
+let lightsOff = false;
+console.log(lightsOn == lightsOff);
 
 //Non-Primitive Data Types are mutable (you can change them)
 
+//objects
+// arrays
+
+let myArr = [4, 5, 8, 9];
+console.log(myArr[0])
+console.log(myArr)
+
+
+
+
+let nums = [1, 2, 3];
+let numbers = [1, 2, 3];
+console.log(nums == numbers)
+
+let userOne = {
+    name: "Woody",
+    role: "student",
+    country: "USA"
+}
+
+let userTwo = {
+    name: "Woody",
+    role: "student",
+    country: "USA"
+}
+//let userTwo = userOne;
+console.log(userOne == userTwo)
