@@ -1,4 +1,7 @@
 //Assignment operators 
+//Stores/assigns a value in a variable
+
+let country = "USA"
 
 //let country="United States"
 //Arithmetic Operators
@@ -8,6 +11,11 @@
 // Division(/): a / b
 // Modulus(%): a % b
 // Exponential(**): a ** b
+
+let x = 5;
+console.log(x);
+x + 3;
+console.log(x += 3);
 
 
 // Operator	Description
