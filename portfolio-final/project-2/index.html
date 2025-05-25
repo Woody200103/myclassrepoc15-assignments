@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <!--link to the outside style sheet-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <!--the container for the entire list of things needed to be done-->
+    <div class="container">
+      <h1 class="title">The To-Do App</h1>
+      <!--the text input box-->
+      <div class="todo-input">
+        <input
+          type="text"
+          name="taskInput"
+          id="taskInput"
+          placeholder="Add new tasks here..."
+        />
+        <!--the button uses Javascrit to make everything work-->
+        <button onclick="addTask()">Add</button>
+      </div>
+      <!--the actual list the user creates-->
+        <ul id="taskList">
+
+        </ul>
+    </div>
+    <!--the link for JavaScript-->
+    <script src="app.js"></script>
+  </body>
+</html>

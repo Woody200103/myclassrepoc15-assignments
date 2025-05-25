@@ -1,0 +1,48 @@
+/*external style sheet for mom jewelry page*/
+body{
+    background-color: blanchedalmond;
+}
+/*targets the h1 and h2 elements*/
+h1, h2{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+/*styles the h1 element*/
+h1{
+    background-color: burlywood;
+    font-size: 50px;
+    color: blue;
+    text-decoration: underline;
+}
+/*styles the h2 element*/
+h2{
+    font-size: 27px;
+}
+/*styles the paragraph elements*/
+p{
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: 600;
+}
+/*styles the pics*/
+.pics{
+   background-color: cadetblue; 
+   height: auto;
+   display: flex;
+   padding: 8px;
+   margin: 5px;
+   
+}
+/*styles the footer*/
+footer{
+    background-color: burlywood;
+    padding: 5px;
+    margin: 2px;
+    font-size: 18px;
+    display: flex;
+}
+/*styles the txt of the email*/
+.mom-email, .dad-email, .son-email {
+    color: blue;
+}

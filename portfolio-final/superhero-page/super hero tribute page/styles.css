@@ -1,0 +1,31 @@
+/*external stylesheet for the superhero page*/
+body{
+    background-color: greenyellow;
+    text-align: center;  
+}
+/*styles the main element text of the page*/
+main{
+    font-size: 4rem;
+    font-style: italic;
+    background-color: chocolate;
+    padding: 5px;
+    text-align: center;
+}
+/*styles all the images to fit the page*/
+.smaller-image{
+    height: 34rem;
+}
+/*styles all the paragraph text */
+p{
+    font-size: 2rem;
+}
+/*styles all the name elements txt*/
+name {
+    font-size: 1.6rem;
+    text-decoration: underline blueviolet;
+    font-weight: 600;
+}
+/*styles all the h1 txt on the page*/
+h1{
+    font-size: 2.5rem;
+}

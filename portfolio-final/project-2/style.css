@@ -1,0 +1,62 @@
+/*flex and center is used to arrange columns and center everything on the page */
+body{
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: xx-large;
+}
+/*targets the box container that holds the app*/
+.container{
+    background: purple;
+    padding: 20px;
+    border-radius: 25%;
+    box-shadow: 10 10 50px rgba(0, 0, 0, 0.6);
+    width: 350px;
+    text-align: center;
+}
+/*targets the todo-input button when submitting*/
+.todo-input{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: large;
+}
+/*targets the list of items*/
+ul{
+    list-style: none;
+    padding: 0;
+}
+/*targets the actual list items*/
+li{
+    margin: 5px 0;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-family: cursive;
+
+}
+.delete-btn{
+    background-color: firebrick;
+    color: aliceblue;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 55%;
+    cursor: pointer;
+}
+.todo-input button{
+    background-color: darkturquoise;
+    color: darkblue;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 40%;
+    cursor: pointer;
+    font-size: large;
+    font-style: italic;
+    font-weight: 600;
+}

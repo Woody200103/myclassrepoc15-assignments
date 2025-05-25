@@ -1,0 +1,99 @@
+    /*used flex to put the containers in columns and centered on the page*/
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	justify-content: center;
+    font-family: sans-serif;
+    color: rgb(234, 4, 4);
+    text-shadow: 7px 5px 1px rgba(0, 0, 0, 100);
+    /*the pic i used created by ChatGPT*/
+	background: url(/portfolio-final/project-1/not-a-clue-gang.webp);
+    background-position: left;
+    /*overflow used to keep background from repeating*/
+    overflow: hidden;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 75px;
+    text-align: center;
+    font-family: fantasy; 
+}
+h3{
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 75px;
+    text-align: center;
+    font-family: fantasy; 
+}
+
+.clock{
+    margin: 10px;
+    display: flex;
+    position: relative;
+}
+/*targets the class with clock and the div for the clock*/
+.clock div {
+    margin: 5px;
+}
+/*targets the class with clock and the span element*/
+.clock span{
+    width: 90px;
+    border-radius: 50%;
+    height: 115px;
+    background-color: rgb(108, 5, 226);
+    opacity:"";
+    color: rgb(18, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    text-shadow: px px px rgba(68, 10, 10, 0.740);
+}
+/*targets the clock ant text clas*/
+.clock .text{
+height: 45px;
+margin: 5px;
+text-shadow: 2px 4px 1px rgba(68, 10, 10, 0.740);
+font-size: 14px;
+font-family: cursive;
+text-decoration-color: black;
+text-transform: uppercase;
+letter-spacing: 2px;
+background: rgba(195, 80, 248, 0.931) ;
+/*used to make thecolor not transparent*/
+opacity: 1;
+
+}
+/*targets the class with clock and the id with ampm*/
+.clock #ampm{
+    width: 80px;
+    height: 50px;
+    font-size: 40px;
+    background: greenyellow;
+    color: darkred;
+    text-shadow: none;
+    font-weight: 700;
+}
+/*targets the first box container*/
+#box1 {
+    background-color: black;
+    border-style: outset;
+    border-color: rgb(255, 221, 0);
+    border-width: 20px;
+    border-radius: 20%;
+    justify-content: center;
+} 
+/*targets the second box container*/
+#box2 {
+   
+    background-color: black;
+    justify-content: center;
+    border-style: outset;
+    border-color: rgb(255, 221, 0);
+    border-width: 20px;
+    border-radius: 35%;
+}

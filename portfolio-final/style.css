@@ -1,0 +1,143 @@
+*, *::before, *::after { 
+  box-sizing: border-box;  /* include padding/border in width/height */ 
+  margin: 0;               /* remove default browser spacing */ 
+  padding: 0; 
+} 
+ 
+/* ==== 3.2 CSS VARIABLES ==== */ 
+:root { 
+  --clr-primary: black;   /* Navy blue */ 
+  --clr-accent:  #1abc9c;   /* Mint teal */ 
+  --clr-bg:      grey;   /* Off-white */ 
+  --ff-main:     'Arial', sans-serif; 
+  --spacing:     1.5rem; 
+} 
+ 
+/* ==== 3.3 GLOBAL STYLES ==== */ 
+body { 
+  font-family: var(--ff-main); 
+  background: var(--clr-bg); 
+  color: var(--clr-primary); 
+  line-height: 1.6; 
+  scroll-behavior: smooth;  /* bonus smooth scroll */ 
+} 
+.me {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+footer {
+    border: solid 5px purple;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight: 300;
+}
+
+.to {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+a { 
+  color: var(--clr-accent); 
+  text-decoration: none; 
+} 
+/* TODO: Add a:hover and a:focus styles */ 
+a:hover,
+a:focus { 
+  color: var(--clr-primary); 
+}
+  
+/* ==== 4. HEADER & NAV ==== */ 
+.site-header { 
+  background: var(--clr-primary); 
+  color: white; 
+  padding: var(--spacing); 
+  display: flex;                  /* Flex container */ 
+  justify-content: space-between; /* spread name & nav */ 
+  align-items: center;            /* vertical centering */ 
+} 
+.site-header h1 { 
+  font-size: 2rem; 
+} 
+.site-nav ul { 
+  list-style: none;               /* remove bullets */ 
+  display: flex; 
+  gap: var(--spacing); 
+} 
+.site-nav a { 
+  border-bottom: 2px solid transparent; 
+  padding-bottom: 2px; 
+} 
+.site-nav a:hover, 
+.site-nav a:focus { 
+  border-color: var(--clr-accent); 
+} 
+ 
+ 
+.about-section { 
+  max-width: 800px; 
+  margin: 2rem auto;           /* vertical + center */ 
+  padding: 0 var(--spacing); 
+} 
+.about-section h2 { 
+  display: inline-block;       /* underline width = text width */ 
+  border-bottom: 4px solid var(--clr-accent); 
+  margin-bottom: 1rem; 
+}
+.projects-section { 
+  padding: var(--spacing); 
+} 
+.projects-section h2 { 
+  display: inline-block; 
+  border-bottom: 4px solid var(--clr-primary); 
+  margin-bottom: 1rem; 
+} 
+.grid-container { 
+  display: grid;              /* enables CSS Grid */ 
+  gap: 1rem; 
+  /* TODO: replace with responsive formula below */ 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+} 
+.grid-item { 
+  background: rgb(24, 78, 103); 
+  border: 5px solid var(--clr-accent); 
+  border-radius: 6px; 
+  overflow: hidden; 
+  text-decoration: none;      /* remove underline */ 
+  display: flex; 
+  flex-direction: column;     /* stack image + info */ 
+} 
+.grid-item img { 
+  width: 100%; 
+  display: block; 
+} 
+.item-info { 
+  padding: 0.75rem; 
+} 
+ 
+    
+    
+    /*auto-fit + minmax() creates a responsive grid that shrinks and grows with the screen size because CSS Grid is a two-dimensional layout system*/
+/* Base styles = mobile first */ 
+@media (min-width: 600px) { 
+  /* TODO: increase padding on .about-section & .projects-section */ 
+    .about-section { 
+        padding: 2rem; 
+    }
+    .projects-section { 
+        padding: 2rem; 
+    }
+} 
+@media (min-width: 900px) { 
+  /* TODO: bump up .site-header h1 font-size & .site-nav gap */ 
+    .site-header h1 { 
+        font-size: 2.5rem; 
+    }
+    .site-nav { 
+        gap: 2rem; 
+    }
+}
