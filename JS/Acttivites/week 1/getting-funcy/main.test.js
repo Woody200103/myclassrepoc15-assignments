@@ -1,6 +1,57 @@
 /**********************************
  * YOUR CODE GOES HERE THIS TIME! *
  **********************************/
+var x = 3;
+var y = 10;
+var z = 4;
+var greeting = 'hello'
+var firstName = 'world';
+var callStatus ='ringing';
+
+function double() {
+   x = x * 2;
+  //this will double the value of x by 2
+}
+function triple() {
+   y = y * 3;
+  //this will triple the value of y by 3
+}
+function square() {
+   z = z * z;
+  //this will square the value of z
+  //proper syntact for squareing a number is to use the double ** sign ex: z = z ** z
+}
+function beNice() {
+  greeting = 'hello ' + firstName;
+  //this will change the value of greeting to say hello to the person with the first name in firstName
+}
+function changeName() {
+  firstName = 'Danger';
+  //this will change the value of firstName to 'Danger'
+}
+function hangUp() {
+  callStatus = 'call ended';
+  //this will change the value of callStatus to be 'call ended'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
