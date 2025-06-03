@@ -6,7 +6,7 @@ a = a * b;  // Line 5
 b = b + a; // Line 6
 
 // What is the value of a...
-// ... after line 3 executes?
+// ... after line 3 executes? 
 
 
 
