@@ -1,13 +1,46 @@
-// Window prompt() method
-// The window prompt methods display a prompt box with an input on your browser to take input values and the input data can be stored in a variable. The prompt() method takes two arguments. The second argument is optional.
+////////////////////////////////////////////////Window Input Methods///////////////////////////////
 
-//prompt("what is your name?")
+// The window.prompt() method displays a dialog with an optional message prompting the user to input some text.
+// It returns the text the user entered, or null if the user cancels. It takes two arguments:
+//   1) The message to display.
+//   2) (Optional) A default value for the input field.
+
+// Example usage:
+// prompt("What is your name?");  // Displays a prompt with no default.
+
+//Prompt your user with a question and console.log() the response:
+let userName = prompt("What is your name?", "Guest");  
+// • If the user types “Alice” and clicks OK, userName === "Alice".
+// • If the user clicks Cancel, userName === null.
+
+console.log("User entered:", userName);
 
 
 
-//Prompt your user with a question and console.log() and view in your browser 
+///////////////////////////////////////////////Window confirm() Method///////////////////////////////
 
+// The window.confirm() method displays a modal dialog with a message and two buttons—OK and Cancel.
+// It returns true if the user clicks OK, and false if the user clicks Cancel.
 
+// Example usage:
+let isOver18 = confirm("Are you 18 or older?");  
+// • If the user clicks OK, isOver18 === true.
+// • If the user clicks Cancel, isOver18 === false.
 
-//confirm() 
+console.log("User is 18 or older:", isOver18);
 
+// prompt(message, defaultValue)
+
+    // Purpose: Collects a string input from the user.
+
+    // Returns: The entered string, or null if canceled.
+
+    // Use Cases: Asking for simple user data (name, age, password, etc.).
+
+confirm(message)
+
+    // Purpose: Asks the user to confirm (“OK”/“Cancel”) a yes/no question.
+
+    // Returns: true if OK, false if Cancel.
+
+    // Use Cases: Verifying a destructive action (delete, sign out), consent, etc.
