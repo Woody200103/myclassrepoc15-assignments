@@ -3,16 +3,16 @@
  ******************/
 let myFirstName = "Steven";
 let myLastName = "Lane";
-let myfavoriteCeleb = "Ron Jeremy";
+let myFavoriteCeleb = "Ron Jeremy";
 let mySentence = "My name is " + myFirstName + " " + myLastName + ". My favorite celebrity is " + myFavoriteCeleb + ".";
-let myLuckyNumber = 15;
+let myLuckyNum = 15;
 let myAge = 26;
 let myHeight = 6.1;// feet
 myFavoriteYear =1999;
 
-let mySum = "5 + 2317 + 36";
-let myProduct = "232 * 43 % 2 + 4";
-let myHeightAndAge = "myAge + myHeight";
+let mySum = 5 + 2317 + 36;
+let myProduct = 232 * 43 / 2 + 4;
+let myHeightAndAge = myAge + myHeight;
 
 
 
